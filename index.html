@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script type="text/javascript" scr="js\script.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MISS YOU Button</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="misscounter" id="misscounter">
+        <h1 id="misstext" class="misstext">You have missed mimi: 0 times</h1>
+    </div> 
+    <div class="yomama">
+      <header>
+        <button type="button" onclick = "msgprint()" value = "Display" id="btn">I MISS YOU <br>
+        Button</button>
+        <script>
+            function test() {
+              document.getElementById("misstext").innerHTML = "You have missed mimi: " + ang + " times";
+              document.querySelector(".misscounter").className = "misscounter";
+              requestAnimationFrame((time) => {
+              requestAnimationFrame((time) => {
+              document.querySelector(".misscounter").className = "misscounter goup";
+                  });
+              });
+            }
+            let ang = 1
+            let btn = document.getElementById("btn");
+            btn.addEventListener('click', event => {
+              test();
+              ang += 1;
+            });
+          </script>
+
+      </header>
+      <main>
+        <section>
+          <h2></h2>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
